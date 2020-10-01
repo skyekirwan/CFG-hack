@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>RE-cruit</title>
+    <title>ReCruit - Home</title>
 
   </head>
   <body class="pt-2">
@@ -25,7 +25,7 @@
 			    </form>
 			</div>
 			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign in </button>
+		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign In </button>
 		    </div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@
 					  <div class="form-group">
 					    <input type="password" class="form-control" id="#" placeholder="Password">
 					  </div>
-					<button class="btn btn-primary mt-2" type="submit">Sign in</button>
+					<button class="btn btn-primary mt-2" type="submit"><a href="account.html">Sign in</a></button>
 
 				</form>
 				<a href="#"> Reset password </a>
@@ -67,36 +67,32 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav m-auto">
 	      <li class="nav-item active pr-5">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-		<a class="nav-link" href="reviews.html">Community Reviews</a>
+	        <a class="nav-link" href="reviews.html">Community Reviews </a>
 	      </li>
-	      <li class="nav-item pl-5 pr-5">
+	      <li class="nav-item pr-5">
 	        <a class="nav-link" href="resources.html">My Resources</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Applications</a>
+	        <a class="nav-link" href="my-applications.html">My Applications</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
-
     </header>
 
     <main class="mb-5 px-5">
-	    <div class="container-fluid p-5"> 
+	    <div class="container-fluid"> 
 		  <div class="row">
 		    <!--Title -->
-		    <div class="col-md-7 mt-5"> 
-		    	<h1> RE-cruit </h1>
-		    	<br>
-		    	<h5> <i> Tag line </i></h5> 
-		    	<h6> Description of website </h6>
+		    <div class="col-md-7"> 
+		    	<img src="images/logo-with-tag.png" alt="ReCRuit Logo with tag-line 'Making recuitment accessible for you'">
 		    </div>
 		    <!--Sign up form -->
 		    <div class="col-md-5"> 
-			    <form class="border p-5 text-center">
+			    <form class="border p-5 text-center" id="sign-up">
 			    	<h4>Sign up now for free!</h4>
 					  <div class="form-group">
 					    <input type="text" class="form-control" id="#" placeholder="Enter your name">
@@ -117,12 +113,19 @@
 	    </div>
     </main>
     <!--Footer area -->	
-    <footer class="page-footer bg-secondary p-2">
+    <footer class="page-footer p-2">
     	<p> Footer content </p>
     	<p> Code First Girls: Diversity Hack - Team 1 </p>
     	<p> &copy; 2020 - Team 1 </p>
 	</footer>
+	<style>
+		
+		.page-footer {
+			 background-color: #4f5d75;
+		}
 
+	</style>
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
