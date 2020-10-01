@@ -25,40 +25,10 @@
 			    </form>
 			</div>
 			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign in </button>
+		    	<button type="button" class="btn btn-primary"> Sign in </button>
 		    </div>
 		</div>
 	</div>
-	<!-- The Log-in Modal -->
-	<div class="modal" id="loginModal">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <!-- Modal Header -->
-	      <div class="modal-header">
-	        <h4 class="modal-title">Sign in</h4>
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	      </div>
-	      <div class="modal-body">
-	        <form class="p-5 text-center">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="#" placeholder="Enter your email address">
-					  </div>
-					  <div class="form-group">
-					    <input type="password" class="form-control" id="#" placeholder="Password">
-					  </div>
-					<button class="btn btn-primary mt-2" type="submit">Sign in</button>
-
-				</form>
-				<a href="#"> Reset password </a>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- End of log-in modal --> 
-
 	<!--Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,15 +36,10 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav m-auto">
-	      <li class="nav-item active pr-5">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      <li class="nav-item pr-5">
+	        <a class="nav-link" href="#">Home </a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-
-	        <a class="nav-link" href="reviews.html">Community Reviews</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="resources.html">My Resources</a>
 	        <a class="nav-link" href="#">Community Reviews</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
@@ -90,42 +55,41 @@
     </header>
 
     <main class="mb-5 px-5">
-	    <div class="container-fluid p-5"> 
-		  <div class="row">
-		    <!--Title -->
-		    <div class="col-md-7 mt-5"> 
-		    	<h1> RE-cruit </h1>
-		    	<br>
-		    	<h5> <i> Tag line </i></h5> 
-		    	<h6> Description of website </h6>
-		    </div>
-		    <!--Sign up form -->
-		    <div class="col-md-5"> 
-			    <form class="border p-5 text-center">
-			    	<h4>Sign up now for free!</h4>
-					  <div class="form-group">
-					    <input type="text" class="form-control" id="#" placeholder="Enter your name">
+    	<h2> Your Account </h2>
+		<div class="container-fluid m-5 p-5">
+			<div class="row justify-content-center"> 
+				<div class="col-4">
+					<img src="images/profile-picture.png" class="img-fluid rounded-circle" width="150" height="150" alt="Your profile picture"> 
+				</div>
+				<div class="col-4">
+					<h4> First Name </h4>
+					<h4> Location </h4> 
+				</div>
+			</div>
+			<div class="row">
+				<form class="p-5">
+					  <div class="form-group row">
+					  	<label class="col-sm-2 col-form-label">Name: </label>
+					  	<div class="col-md-10">
+					    	<input type="text" class="form-control" id="#" placeholder="Skye Kirwan"  readonly>
+					    </div>
 					  </div>
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="#" placeholder="Enter your email address">
+					  <div class="form-group row">
+					  	<label class="col-sm-2 col-form-label">Email: </label>
+					    <div class="col-md-10">
+					    	<input type="email" class="form-control" id="#" placeholder="name@outlook.com"  readonly>
+					    </div>
 					  </div>
-					  <div class="form-group">
-					    <input type="password" class="form-control" id="#" placeholder="Enter a password">
-					  </div>
-					  <div class="form-group">
-					    <input type="password" class="form-control" id="#" placeholder="Confirm password">
-					  </div>
-					<button class="btn btn-primary mt-2" type="submit">Get Started!</button>
+					
+					<button class="btn btn-primary" type="submit">Edit Details</button>
 				</form>
-		    </div>
-		  </div>
-	    </div>
+			</div>
+		</div>
     </main>
     <!--Footer area -->	
     <footer class="page-footer bg-secondary p-2">
     	<p> Footer content </p>
     	<p> Code First Girls: Diversity Hack - Team 1 </p>
-    	<p> &copy; 2020 - Team 1 </p>
 	</footer>
 
     <!-- Optional JavaScript -->
