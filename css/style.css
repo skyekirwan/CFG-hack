@@ -6,8 +6,17 @@ body {
 
 /* footer */
 .page-footer {
-			 background-color: #4f5d75;
-		}
+	background-color: #4f5d75;
+	color: #ffffff;
+}
+
+#team {
+	text-align: center;
+}
+
+#copyright {
+	text-align: right;
+}
 
 /*sign in pop-up */
 #sign-in-text{
@@ -15,10 +24,13 @@ body {
 	text-decoration: none;
 }
 
-/* my-resources */
+
+
+/*******************************************/
+/* MY-RESOURCES PAGE */
 
 /* Plus icon */
 .fa fa-plus {
-	font-size:24px
+	font-size:24px;
 }
 
