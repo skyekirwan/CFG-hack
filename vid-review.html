@@ -13,7 +13,7 @@
     <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>ReCruit | Assessment Centre Example</title>
+    <title>ReCruit | Video Interview Example</title>
 
   </head>
   <body class="pt-2">
@@ -75,15 +75,20 @@
 		    </div>
 		    <div class="col-md-5"> 
 			    <form class="border p-5" id="">
-			    	<h4>Assessment Centres</h4>
+			    	<h4>Video Interview</h4>
 			    	<div class="form-group">
-					    <label for="ramp">Was there a ramp at the front of the building ?</label><br>
-						<input type="button" value="Yes"></input>
-						<input type="button" value="No"></input>
-						<input type="button" value="Not Applicable"></input><br><br>
+					    <label for="">How would you rate the amount of time given to complete the video interview on a scale from 1-5? </label><br>
+						<select name="scales" id="scales">
+ 						 	<option value="one">1</option>
+  							<option value="two">2</option>
+  							<option value="three">3</option>
+  							<option value="four">4</option>
+   							<option value="five">5</option>
+						</select><br>
+					
 					 
 					 
-						<label>Were there working lifts in the building?</label><br>
+						<label>Were you given a practice question beforehand?</label><br>
 						<input type="button" value="Yes"></input>
 						<input type="button" value="No"></input>
 						<input type="button" value="Not Applicable"></input><br><br>
@@ -96,16 +101,13 @@
   							<option value="four">4</option>
    							<option value="five">5</option>
 						</select><br>
-					
+						
 					  
-					  	<label>How would you rate the amount of time given to complete the taks on a scale from 1-5?</label>
-						<select name="scales" id="scales">
- 						 	<option value="one">1</option>
-  							<option value="two">2</option>
-  							<option value="three">3</option>
-  							<option value="four">4</option>
-   							<option value="five">5</option>
-						</select><br>
+					  	<label>Were you given the chance to re-record your questions?</label><br>
+					  	<input type="button" value="Yes"></input>
+						<input type="button" value="No"></input>
+						<input type="button" value="Not Applicable"></input><br><br>
+						
 					
 					<button class="btn btn-primary mt-2" type="submit">Submit</button>
 				</form>
@@ -124,4 +126,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
-
