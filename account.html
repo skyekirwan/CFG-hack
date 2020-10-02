@@ -21,14 +21,16 @@
     	<!--Fix how top area looks on mobile-->
     	<div class="row pt-3 mb-4">
 		    <!--Search bar -->
-		    <div class="col-md-10"> 
+		    <div class="col-md-9"> 
 			    <form class="form-inline">
 				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
 				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
 			    </form>
 			</div>
-			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary"> Sign in </button>
+			<div class="col-3">
+					<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="You profile picture"> 
+				<em> Welcome Back, Androulla </em>
+				<button type="button" class="btn btn-primary"> My Account </button>
 		    </div>
 		</div>
 	</div>
@@ -57,30 +59,43 @@
 
     </header>
 
-    <main class="mb-5 px-5">
-    	<h2> Your Account </h2>
-		<div class="container-fluid m-5 p-5">
-			<div class="row justify-content-center"> 
-				<div class="col-4">
+    <main class="mb-5 px-5 m-auto">
+    	<h3> Your Account </h3>
+    	<div class="container-fluid">
+    		<div class="row justify-content-center">
+    			<div class="col-md-2"> 
 					<img src="images/profile-picture.png" class="img-fluid rounded-circle" width="150" height="150" alt="Your profile picture"> 
 				</div>
-				<div class="col-4">
-					<h4> First Name </h4>
+
+				<div class="col-md-2">
+					<h4> Name </h4>
 					<h4> Location </h4> 
 				</div>
 			</div>
-			<div class="row">
+			<div class="row justify-content-center mt-2">
 				<form class="p-5">
-					  <div class="form-group row">
-					  	<label class="col-sm-2 col-form-label">Name: </label>
-					  	<div class="col-md-10">
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Name: </label>
+					  	<div class="col-md-9">
 					    	<input type="text" class="form-control" id="#" placeholder="Skye Kirwan"  readonly>
 					    </div>
 					  </div>
-					  <div class="form-group row">
-					  	<label class="col-sm-2 col-form-label">Email: </label>
-					    <div class="col-md-10">
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Location: </label>
+					    <div class="col-md-9">
+					    	<input type="text" class="form-control" id="#" placeholder="UK"  readonly>
+					    </div>
+					  </div>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Email: </label>
+					    <div class="col-md-9">
 					    	<input type="email" class="form-control" id="#" placeholder="name@outlook.com"  readonly>
+					    </div>
+					  </div>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Disability: </label>
+					    <div class="col-md-9">
+					    	<input type="text" class="form-control" id="#" placeholder=""  readonly>
 					    </div>
 					  </div>
 					

@@ -4,17 +4,19 @@ body {
 	font-family: Arial;
 }
 
-
-
-
 /* footer */
 .page-footer {
 			 background-color: #4f5d75;
 		}
 
+#sign-in-text{
+	color: white;
+	text-decoration: none;
+}
 
-
-
+#profile-top{
+	margin: auto;
+}
 /* my-resources */
 
 /* Plus icon */
