@@ -13,7 +13,7 @@
     <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>ReCruit | Accessment Center Example</title>
+    <title>ReCruit | Assessment Centre Example</title>
 
   </head>
   <body class="pt-2">
@@ -71,23 +71,37 @@
 		    </div>
 		    <div class="col-md-5"> 
 			    <form class="border p-5" id="">
-			    	<h4>Assessment Centers</h4>
+			    	<h4>Assessment Centres</h4>
 			    	<div class="form-group">
-					    <label for="ramp">Was there a ramp at the end of the building ?</label>
-						<input type="radio" value="yes">Yes</input>
-						<input type="radio" value="no">No</input>
+					    <label for="ramp">Was there a ramp at the front of the building ?</label><br>
+						<input type="button" value="Yes"></input>
+						<input type="button" value="No"></input>
+						<input type="button" value="Not Applicable"></input><br><br>
 					 
 					 
-						<label>Were there working lifts in the building?</label>
-						<input type="radio" value="">Yes</input>
-						<input type="radio" value="">No</input><br>
+						<label>Were there working lifts in the building?</label><br>
+						<input type="button" value="Yes"></input>
+						<input type="button" value="No"></input>
+						<input type="button" value="Not Applicable"></input><br><br>
 					
 						<label>How would you rate the amount of time given for breaks on a scale from 1-5?</label>
-						<input type="text"></input>
+						<select name="breaks" id="breaks">
+ 						 	<option value="one">1</option>
+  							<option value="two">2</option>
+  							<option value="three">3</option>
+  							<option value="four">4</option>
+   							<option value="five">5</option>
+						</select><br>
 					
 					  
-					  	<label>How would you rate the amount of time given to complete the taks on a scale from 1-5.</label><br>
-						<input type="text"></input><br>
+					  	<label>How would you rate the amount of time given to complete the taks on a scale from 1-5?</label>
+						<select name="breaks" id="breaks">
+ 						 	<option value="one">1</option>
+  							<option value="two">2</option>
+  							<option value="three">3</option>
+  							<option value="four">4</option>
+   							<option value="five">5</option>
+						</select><br>
 					
 					<button class="btn btn-primary mt-2" type="submit">Submit</button>
 				</form>
