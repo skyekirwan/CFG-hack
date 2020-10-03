@@ -64,48 +64,73 @@
     </header>
 
     <main class="mb-5 px-5 m-auto">
-    	<h3> Your Account </h3>
     	<div class="container-fluid">
-    		<div class="row justify-content-center">
-    			<div class="col-md-2"> 
-					<img src="images/profile-picture.png" class="img-fluid rounded-circle" width="150" height="150" alt="Your profile picture"> 
+    		<div class="row">
+    			<div class="col-md-4"> 
+					<img src="images/profile-picture.png" class="img-fluid rounded-circle m-5" width="150" height="150" alt="Your profile picture"> 
+					<h5> <i> Hi, Androulla! </i></h5>
 				</div>
 
-				<div class="col-md-2">
-					<h4> Name </h4>
-					<h4> Location </h4> 
-				</div>
-			</div>
-			<div class="row justify-content-center mt-2">
-				<form class="p-5">
+				<div class="col-md-8">
+					<form class="p-5">
 					  <div class="form-group row justify-content-center">
-					  	<label class="col-sm-3 col-form-label">Name: </label>
+					  	<label class="col-sm-3 col-form-label">Full Name: </label>
 					  	<div class="col-md-9">
-					    	<input type="text" class="form-control" id="#" placeholder="Skye Kirwan"  readonly>
-					    </div>
-					  </div>
-					  <div class="form-group row justify-content-center">
-					  	<label class="col-sm-3 col-form-label">Location: </label>
-					    <div class="col-md-9">
-					    	<input type="text" class="form-control" id="#" placeholder="UK"  readonly>
+					    	<input type="text" class="form-control" id="#" placeholder="Androulla C" readonly>
 					    </div>
 					  </div>
 					  <div class="form-group row justify-content-center">
 					  	<label class="col-sm-3 col-form-label">Email: </label>
 					    <div class="col-md-9">
-					    	<input type="email" class="form-control" id="#" placeholder="name@outlook.com"  readonly>
+					    	<input type="email" class="form-control" id="#" placeholder="androulla@cfg-team1.com" readonly>
 					    </div>
 					  </div>
 					  <div class="form-group row justify-content-center">
 					  	<label class="col-sm-3 col-form-label">Disability: </label>
-					    <div class="col-md-9">
-					    	<input type="text" class="form-control" id="#" placeholder=""  readonly>
-					    </div>
+					  	<div class="col-md-9">
+						    <select class="form-control">
+							  <option>Please select</option>
+							  <option>Visually Impared</option>
+							  <option>Austism</option>
+							  <option>Dyslexia</option>
+							  <option>Other</option>
+							  <option>Prefer not to say</option>
+							  <option>None</option>
+							</select>
+						</div>
 					  </div>
-					
-					<button class="btn btn-primary" type="submit">Edit Details</button>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Work status: </label>
+					  	<div class="col-md-9">
+						    <select class="form-control">
+						      <option>Please select</option>
+							  <option>Student</option>
+							  <option>Unemployed and not looking</option>
+							  <option>Unemployed and searching</option>
+							  <option>Employed and not looking</option>
+							  <option>Employed and searching</option>
+							  <option>Prefer not to say</option>
+							  <option>Other</option>
+							</select>
+						</div>
+					  </div>
+					<div class="row"> 
+						<div class="col-md-4">
+						  	<div class="form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							    <label class="form-check-label" for="exampleCheck1">I would like my profile to be public</label>
+						  </div>
+						</div>
+
+						<div class="col-md-4">
+							<button class="btn btn-primary" type="submit">Save Details</button>
+						</div>
+					 </div>
+						
+				</div>
 				</form>
-			</div>
+				</div>
+			</div>		
 		</div>
     </main>
     
