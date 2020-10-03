@@ -11,6 +11,7 @@ body {
 
 #team {
 	text-align: center;
+	font-size: 20px;
 }
 
 #copyright {
@@ -54,12 +55,6 @@ body {
 
 
 /* my-resources */
-
-
-/*******************************************/
-/* MY-RESOURCES PAGE */
-
-
 /* Plus icon */
 .fa fa-plus {
 	font-size:24px;
