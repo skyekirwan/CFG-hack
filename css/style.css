@@ -66,6 +66,13 @@ nav.button {
 	border: solid #4f5d75;
 }
 
+.search-btn
+{
+	color: #4f5d75;
+	background-color: white;
+	border: solid #4f5d75;
+}
+
 /* index page */
 #sign-up-form
 {
