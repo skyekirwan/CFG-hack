@@ -16,31 +16,31 @@
 
   </head>
   <body class="pt-2">
-    <header class="mb-5">
+          <header class="mb-5">
         <form class="form-inline p-2">
           <input class="form-control col-lg-10 ml-2" type="search" placeholder="Search company reviews..." aria-label="Search">
-          <button class="btn ml-2 search-btn" type="submit">Search</button>
+          <button class="btn ml-2 search-btn" type="submit"><a href="reviews.html">Search</a></button>
            <button class="btn ml-1 yellow-btn" type="submit"><a href="index.html">Log Out</a></button>
         </form>
  
       <!--Navigation -->
-    <nav class="navbar navbar-expand-lg" style="color: white;">
+    <nav class="navbar inside-nav navbar-expand-lg mx-5" >
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item pr-5">
-            <a class="nav-link" href="account.html">My Profile</a>
+            <a class="nav-link" href="account.html" style="color:white;"> My Profile </a>
           </li>
-          <li class="nav-item active pr-5">
-            <a class="nav-link" href="resources.html">My Resources <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item pl-5 pr-5">
-            <a class="nav-link" href="reviews.html">Community Reviews </a>
+          <li class="nav-item active pl-5 pr-5">
+            <a class="nav-link" href="resources.html" style="color:white;">My Resources </a>
           </li>
           <li class="nav-item pl-5 pr-5">
-            <a class="nav-link" href="my-applications.html">My Applications</a>
+            <a class="nav-link" href="reviews.html" style="color:white;">Community Reviews  </a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="my-applications.html" style="color:white;"><u>My Applications</u><span class="sr-only">(current)</span></a>
           </li>
 
         </ul>
@@ -48,7 +48,7 @@
     </nav>
 
 
-	</header>
+  </header>
 
     <main class="mb-5 px-5">
 		<div class="container-fluid m-5 p-5">
@@ -136,8 +136,8 @@
 							<h4> My Applications </h4>
 						</div>
 						<div class="col-md-4">
-							<button class="btn addButton"> + company </button>
-							<button class="btn addButton"> + role </button>
+							<button class="btn yellow-btn"> + company </button>
+							<button class="btn yellow-btn"> + role </button>
 						</div>
 					</div>
 					<br> 
@@ -205,10 +205,12 @@
 	</footer>	
 
 	<style>
-		.addButton {
-			background-color: #ffd166;
-		}
-	</style>
+      a:hover
+      {
+        color: #b4d2e7 !important;
+      }
+   </style>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
