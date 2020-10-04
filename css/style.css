@@ -1,0 +1,72 @@
+
+body {
+	font-family: Arial;
+}
+
+
+h1, h2, h3, h4, h5 {
+	color: #4f5d75;
+}
+
+.resource-text {
+	color: #4f5d75;
+
+}
+
+/* footer */
+.page-footer {
+	background-color: #4f5d75;
+	color: #ffffff;
+}
+
+/* in the footer */
+#created-by {
+	text-align: center;
+	font-size: 20px;
+}
+
+#copyright {
+	text-align: right;
+	font-size: 25px;
+}
+
+/*sign in pop-up */
+#sign-in-text{
+	color: white;
+	text-decoration: none;
+}
+
+
+/*for any button that needs to go yellow */
+.yellow-btn{
+	background-color: #ffd166;
+	color: #4f5d75;
+}
+/*not sure if this is accessbile*/
+.yellow-btn:hover
+{
+	color: #4f5d75;
+	background-color: white;
+	border: solid #4f5d75;
+}
+
+/* about */
+#ready{
+	background: #F0F0F0;
+}
+
+#team{
+	background: #b4d2e7;
+}
+
+/* footer */
+.page-footer {
+	background-color: #4f5d75;
+}
+
+/* my-resources */
+/* Plus icon */
+.fa fa-plus {
+	font-size:24px;
+}
+

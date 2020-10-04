@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,98 +6,48 @@
     <meta charset="utf-8">
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" type="image/png" href="images/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>RE-cruit</title>
+     <!--Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>ReCruit | Home </title>
 
   </head>
-  <body class="pt-2">
+  <body>
     <header class="mb-5">
-    <div class="container-fluid">
-    	<!--Fix how top area looks on mobile-->
-    	<div class="row pt-3 mb-4">
-		    <!--Search bar -->
-		    <div class="col-md-10"> 
-			    <form class="form-inline">
-				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
-				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
-			    </form>
-			</div>
-			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign in </button>
-		    </div>
-		</div>
-	</div>
-	<!-- The Log-in Modal -->
-	<div class="modal" id="loginModal">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <!-- Modal Header -->
-	      <div class="modal-header">
-	        <h4 class="modal-title">Sign in</h4>
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	      </div>
-	      <div class="modal-body">
-	        <form class="p-5 text-center">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="#" placeholder="Enter your email address">
-					  </div>
-					  <div class="form-group">
-					    <input type="password" class="form-control" id="#" placeholder="Password">
-					  </div>
-					<button class="btn btn-primary mt-2" type="submit">Sign in</button>
-
-				</form>
-				<a href="#"> Reset password </a>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- End of log-in modal --> 
-
-	<!--Navigation -->
+    <!--Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  	<span class="navbar-toggler-icon"></span>
 	  </button>
+	  <img src="images/trimmed-logo.png" alt="ReCruit Logo with tag-line 'Making recuitment accessible for you'" width="120">
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav m-auto">
-	      <li class="nav-item active pr-5">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      <li class="nav-item pr-5">
+	        <a class="nav-link" href="index.html">HOME</a>
 	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="reviews.html">Community Reviews</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="resources.html">My Resources</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Applications</a>
+	      <li class="nav-item active pl-5 pr-5">
+	        <a class="nav-link" href="reviews.html">ABOUT US<span class="sr-only">(current)</span></a>
 	      </li>
 	    </ul>
+	    <button type="button" class="btn yellow-btn"> Sign in </button>
 	  </div>
+
 	</nav>
-
     </header>
-
     <main class="mb-5 px-5">
-	    <div class="container-fluid p-5"> 
+	    <div class="container-fluid"> 
 		  <div class="row">
 		    <!--Title -->
-		    <div class="col-md-7 mt-5"> 
-		    	<h1> RE-cruit </h1>
-		    	<br>
-		    	<h5> <i> Tag line </i></h5> 
-		    	<h6> Description of website </h6>
+		    <div class="col-md-7"> 
+		    	<img src="images/logo-with-tag.png" alt="ReCRuit Logo with tag-line 'Making recuitment accessible for you'">
 		    </div>
 		    <!--Sign up form -->
 		    <div class="col-md-5"> 
-			    <form class="border p-5 text-center">
+			    <form class="border p-5 text-center" id="sign-up">
 			    	<h4>Sign up now for free!</h4>
 					  <div class="form-group">
 					    <input type="text" class="form-control" id="#" placeholder="Enter your name">
@@ -114,18 +65,43 @@
 				</form>
 		    </div>
 		  </div>
-	    </div>
+		</div>
+	<!--How ReCruit works card deck-->	
+	<div class="row p-2 m-0" id="What is ReCruit">
+		<div class="col-md-12 p-2">
+			   <h5> How does Recruit work? </h5>
+		   </div>
+		   <div class="col-md-3">
+			   <img src="images\Review companies.png" alt="Review companies" class="card-img-top" style="width: 14rem;" />	
+			   <p>Review companies on their inclusivity and accesibility</p>
+		   </div>
+		   <div class="col-md-3">
+			   <img src="images\Upload resources.png" alt="Upload resources" class="card-img-top" style="width: 14rem;" />
+			   <p>Upload resources to help others in the recruitment process</p>
+		   </div>
+		   <div class="col-md-3">
+			   <img src="images\Share experiences.png" alt="Community forum" class="card-img-top" style="width: 14rem;" />
+			   <p>Share your candid experiences in the community forum</p>
+		   </div>
+		   <div class="col-md-3">
+			   <img src="images\Track progress.png" alt="Track application progress" class="card-img-top" style="width: 14rem;" />
+			   <p>Track your application progress</p>
+		   </div>
+		</div>
+		</div>
     </main>
     <!--Footer area -->	
-    <footer class="page-footer bg-secondary p-2">
-    	<p> Footer content </p>
-    	<p> Code First Girls: Diversity Hack - Team 1 </p>
+    <footer class="page-footer p-2">
+    	<p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
+    	<p id="copyright"> &copy; ReCruit 2020 </p>
 	</footer>
-
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H44lZH81PoYlFhbGU+4BZp4G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
+=======
+

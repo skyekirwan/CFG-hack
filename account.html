@@ -5,31 +5,37 @@
     <meta charset="utf-8">
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" type="image/png" href="images/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>RE-cruit</title>
+     <!--Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>ReCruit | My Profile</title>
 
   </head>
-  <body class="pt-2">
+  <body>
     <header class="mb-5">
+    	<!--Navigation -->
+	
     <div class="container-fluid">
     	<!--Fix how top area looks on mobile-->
     	<div class="row pt-3 mb-4">
 		    <!--Search bar -->
-		    <div class="col-md-10"> 
+		    <div class="col-md-9"> 
 			    <form class="form-inline">
 				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
 				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
 			    </form>
 			</div>
-			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary"> Sign in </button>
+			<div class="col-3">
+					<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="You profile picture"> 
+				<em> Welcome Back, Androulla </em>
+				<button type="button" class="btn btn-primary"> My Account </button>
 		    </div>
 		</div>
 	</div>
-	<!--Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  	<span class="navbar-toggler-icon"></span>
@@ -37,59 +43,135 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav m-auto">
 	      <li class="nav-item pr-5">
-	        <a class="nav-link" href="#">Home </a>
+	        <a class="nav-link" href="index.html">Home</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="#">Community Reviews</a>
+	        <a class="nav-link" href="reviews.html">Community Reviews </a>
+	      </li>
+	      <li class="nav-item pr-5">
+	        <a class="nav-link" href="resources.html">My Resources</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Resources</a>
+	        <a class="nav-link" href="my-applications.html">My Applications</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Applications</a>
+	        <a class="nav-link" href="about.html">About Us</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
+    <div class="container-fluid">
+    	<!--Fix how top area looks on mobile-->
+    	<div class="row pt-3 mb-4">
+		    <!--Search bar -->
+		    <div class="col-md-9"> 
+			    <form class="form-inline">
+				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
+				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
+			    </form>
+			</div>
+			<div class="col-md-3"> 
+		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign In </button>
+		    </div>
+		</div>
+	</div>
+
 
     </header>
 
     <main class="mb-5 px-5">
-    	<h2> Your Account </h2>
-		<div class="container-fluid m-5 p-5">
-			<div class="row justify-content-center"> 
-				<div class="col-4">
-					<img src="images/profile-picture.png" class="img-fluid rounded-circle" width="150" height="150" alt="Your profile picture"> 
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-md-4 text-center mt-5"> 
+					<img src="images/profile-picture.png" class="img-fluid rounded-circle" width="200" height="200" alt="Your profile picture"> 
+					<h5 class="p-5"> <i> Hi, Androulla! </i></h5>
 				</div>
-				<div class="col-4">
-					<h4> First Name </h4>
-					<h4> Location </h4> 
-				</div>
-			</div>
-			<div class="row">
-				<form class="p-5">
-					  <div class="form-group row">
-					  	<label class="col-sm-2 col-form-label">Name: </label>
-					  	<div class="col-md-10">
-					    	<input type="text" class="form-control" id="#" placeholder="Skye Kirwan"  readonly>
+
+				<div class="col-md-8">
+					<form class="p-5">
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Full Name: </label>
+					  	<div class="col-md-9">
+					    	<input type="text" class="form-control" id="#" placeholder="Androulla C" readonly>
 					    </div>
 					  </div>
-					  <div class="form-group row">
-					  	<label class="col-sm-2 col-form-label">Email: </label>
-					    <div class="col-md-10">
-					    	<input type="email" class="form-control" id="#" placeholder="name@outlook.com"  readonly>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Email: </label>
+					    <div class="col-md-9">
+					    	<input type="email" class="form-control" id="#" placeholder="androulla@cfg-team1.com" readonly>
 					    </div>
 					  </div>
-					
-					<button class="btn btn-primary" type="submit">Edit Details</button>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Disability: </label>
+					  	<div class="col-md-9">
+						    <select class="form-control">
+							  <option>Please select</option>
+							  <option>Visually Impared</option>
+							  <option>Austism</option>
+							  <option>Dyslexia</option>
+							  <option>Other</option>
+							  <option>Prefer not to say</option>
+							  <option>None</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-group row justify-content-center">
+					  	<label class="col-sm-3 col-form-label">Work status: </label>
+					  	<div class="col-md-9">
+						    <select class="form-control">
+						      <option>Please select</option>
+							  <option>Student</option>
+							  <option>Unemployed and not looking</option>
+							  <option>Unemployed and searching</option>
+							  <option>Employed and not looking</option>
+							  <option>Employed and searching</option>
+							  <option>Prefer not to say</option>
+							  <option>Other</option>
+							</select>
+						</div>
+					  </div>
+					<hr>
+					<div class="row justify-content-right pt-2"> 
+						<div class="col-md-12 form-group">
+							<p> Please select a privacy option: </p>
+						
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							  <label class="form-check-label" for="inlineRadio1">I want to be annonymous</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							  <label class="form-check-label" for="inlineRadio2">I consent to publishing my name on my community reviews</label>
+							</div>
+						
+						 </div>
+					</div>
+					<div class="row pt-5">
+						<div class="col-md-3">
+								<button class="btn yellow-btn" type="submit">Save Details</button>
+						</div>
+					</div>
+				</div>
 				</form>
-			</div>
+				</div>
+			</div>		
 		</div>
     </main>
+    <style>
+    	.big-checkbox {
+    		width: 30px; 
+    		height: 30px;
+    	}
+
+    	body {
+    		color: #4f5d75;
+    	}
+    </style>
+    
     <!--Footer area -->	
-    <footer class="page-footer bg-secondary p-2">
-    	<p> Footer content </p>
-    	<p> Code First Girls: Diversity Hack - Team 1 </p>
+    <footer class="page-footer p-2">
+    	<p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
+    	<p id="copyright"> &copy; ReCruit 2020 </p>
 	</footer>
 
     <!-- Optional JavaScript -->

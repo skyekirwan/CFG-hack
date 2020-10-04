@@ -6,34 +6,127 @@
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" type="image/png" href="images/logo.png">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>RE-cruit | My Resources</title>
+    <title>ReCruit | My Resources</title>
 
   </head>
   <body class="pt-2">
+
     <header class="mb-5">
+      <!--Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="reviews.html">Community Reviews </a>
+          </li>
+          <li class="nav-item active pr-5">
+            <a class="nav-link" href="resources.html">My Resources <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="my-applications.html">My Applications</a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
     <div class="container-fluid">
     	<!--Fix how top area looks on mobile-->
     	<div class="row pt-3 mb-4">
 		    <!--Search bar -->
-		    <div class="col-md-10"> 
+
+		    <div class="col-md-9"> 
 			    <form class="form-inline">
 				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews..." aria-label="Search">
 				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
 			    </form>
 			</div>
-				<div class="col-2">
-					<img src="images/profile-picture.png" class= "rounded-circle" width="40" height="40" alt="Your profile picture"> 
+
+			<div class="col-3">
+				<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="You profile picture"> 
 				<em> Welcome Back, Androulla </em>
 				<button type="button" class="btn btn-primary"> My Account </button>
 		    </div>
 		</div>
 	</div>
+
+	</header>
+<!-- 
+    <main class="mb-5 px-5">
+	    <div class="container-fluid p-5"> 
+		  <div class="row"> -->
+		    <!-- Title -->
+		   <!--  <div class="col-md-7 mt-5"> 
+		    	<img src="images/logo-with-tag.png" alt="ReCRuit Logo with tag-line 'Making recuitment accessible for you'">		    	
+		    	 <h6> Description of website </h6> 
+		    </div>
+		   </div>
+		 </div> -->
+
+		 <div class="container">
+		 	<h3> Upload your own resources to the community resource hub and assist in the job application process.</h3>
+
+    	<!-- Example row of columns -->
+    		<div class="row">
+    			<div class="col-md-4" align="center">
+    				<div class="card-body border p-5">
+        				<h4 class="card-title img-fluid">CV/Online Applications</h4>
+        				<img class="img-fluid" src="images/CV-resources-page-smaller.png" alt="Online applications resources image" width="250">
+        				<p>View up-to-date CV and application writing tips or upload your own.</p>
+              			<a class="btn btn-secondary  yellow-btn" href="#" role="button">Learn More &raquo;</a>
+      				</div>
+              		<br>
+        		</div>
+      			
+      			<div class="col-md-4" align="center">
+      				<div class="card-body border p-5">
+         				<h4 class="card-title">Psychometric Tests</h4>
+        				<img class= "img-fluid" src="images/Online-test resources-page-smaller.png" alt="Online test resources image">
+        				<br>
+        				<br>
+        				<p>You can practice Psychometric tests or upload your own advice.</p>
+              			<a class="btn btn-secondary yellow-btn"   href="#" role="button">Learn More &raquo;</a>
+              			<br>
+      				</div>
+        		</div>
+      			
+
+      			<div class="col-md-4" align="center">
+      				<div class="card-body border p-5">
+         				<h4 class="card-title">Telephone Interviews</h4>
+        				<img class="img-fluid" src="images/Interview-resources-page.png" alt="Online test resources image" width="250">
+        				<p>Prepare for telephone and remote interviews</p>
+              			<a class="btn btn-secondary  yellow-btn" href="#" role="button">Learn More &raquo;</a>
+      				</div>
+        		</div>
+    		</div>
+    	</div> <!-- /container -->
+	</main>	
+		   
+		    
+    <!--Footer area --> 
+    <footer class="page-footer p-2">
+      <p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
+      <p id="copyright"> &copy; ReCruit 2020 </p>
+  </footer>
+	
+
 
 	<!--Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">

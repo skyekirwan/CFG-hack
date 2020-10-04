@@ -5,31 +5,19 @@
     <meta charset="utf-8">
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="icon" type="image/png" href="images/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>RE-cruit</title>
+     <!--Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>ReCruit | My Applications</title>
 
   </head>
   <body class="pt-2">
     <header class="mb-5">
-    <div class="container-fluid">
-    	<!--Fix how top area looks on mobile-->
-    	<div class="row pt-3 mb-4">
-		    <!--Search bar -->
-		    <div class="col-md-10"> 
-			    <form class="form-inline">
-				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
-				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
-			    </form>
-			</div>
-			<div class="col-md-2"> 
-		    	<button type="button" class="btn btn-primary"> Sign in </button>
-		    </div>
-		</div>
-	</div>
-	<!--Navigation -->
+    	<!--Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  	<span class="navbar-toggler-icon"></span>
@@ -37,20 +25,40 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav m-auto">
 	      <li class="nav-item pr-5">
-	        <a class="nav-link" href="#">Home </a>
+	        <a class="nav-link" href="index.html">Home</a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="#">Community Reviews</a>
+	        <a class="nav-link" href="reviews.html">Community Reviews </a>
+	      </li>
+	      <li class="nav-item pr-5">
+	        <a class="nav-link" href="resources.html">My Resources</a>
+	      </li>
+	      <li class="nav-item active pl-5 pr-5">
+	        <a class="nav-link" href="my-applications.html">My Applications <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Resources</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link disabled" href="#">My Applications</a>
+	        <a class="nav-link" href="about.html">About Us</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
+    <div class="container-fluid">
+    	<!--Fix how top area looks on mobile-->
+    	<div class="row pt-3 mb-4">
+		    <!--Search bar -->
+		    <div class="col-md-9"> 
+			    <form class="form-inline">
+				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
+				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
+			    </form>
+			</div>
+			<div class="col-3">
+					<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="You profile picture"> 
+				<em> Welcome Back, Androulla </em>
+				<button type="button" class="btn btn-primary"> My Account </button>
+		    </div>
+		</div>
+	</div>
 
     </header>
 
@@ -140,8 +148,8 @@
 							<h4> My Applications </h4>
 						</div>
 						<div class="col-md-4">
-							<button class="btn btn-info"> + company </button>
-							<button class="btn btn-info"> + role </button>
+							<button class="btn addButton"> + company </button>
+							<button class="btn addButton"> + role </button>
 						</div>
 					</div>
 					<br> 
@@ -202,12 +210,17 @@
 			</div>
 		</div>
     </main>
-    <!--Footer area -->	
-    <footer class="page-footer bg-secondary p-2">
-    	<p> Footer content </p>
-    	<p> Code First Girls: Diversity Hack - Team 1 </p>
-	</footer>
+   <!--Footer area -->	
+    <footer class="page-footer p-2">
+    	<p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
+    	<p id="copyright"> &copy; ReCruit 2020 </p>
+	</footer>	
 
+	<style>
+		.addButton {
+			background-color: #ffd166;
+		}
+	</style>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
