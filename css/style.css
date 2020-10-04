@@ -10,7 +10,21 @@ h1, h2, h3, h4, h5 {
 
 .resource-text {
 	color: #4f5d75;
+}
 
+.nav-link 
+{
+	color: #4f5d75;
+	font-size: 130%;
+}
+.nav-link:hover 
+{
+	color: #4f5d75;
+	text-decoration: underline;
+}
+
+nav.button {
+	width: 100px;
 }
 
 /* footer */
@@ -50,7 +64,19 @@ h1, h2, h3, h4, h5 {
 	border: solid #4f5d75;
 }
 
-/* about */
+/* index page */
+#sign-up-form
+{
+	position: absolute;
+  	top: 90px;
+  	right: 90px;
+  	width: 500px;
+  	height: 400px;
+  	background-color: white;
+  	border: solid #4f5d75;
+}
+
+/* about page */
 #ready{
 	background: #F0F0F0;
 }
