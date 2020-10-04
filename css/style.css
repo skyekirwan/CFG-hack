@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5 {
 	color: #4f5d75;
 }
 
+a {
+	text-decoration: none;
+	color: #4f5d75;
+}
+a:hover{
+	text-decoration: none;
+	color: #4f5d75;
+}
+
 .nav-link 
 {
 	color: #4f5d75;
@@ -43,13 +52,6 @@ nav.button {
 	text-align: right;
 	font-size: 25px;
 }
-
-/*sign in pop-up */
-#sign-in-text{
-	color: white;
-	text-decoration: none;
-}
-
 
 /*for any button that needs to go yellow */
 .yellow-btn{
