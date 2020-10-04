@@ -3,13 +3,24 @@ body {
 	font-family: Arial;
 }
 
+
+h1, h2, h3, h4, h5 {
+	color: #4f5d75;
+}
+
+.resource-text {
+	color: #4f5d75;
+
+}
+
 /* footer */
 .page-footer {
 	background-color: #4f5d75;
 	color: #ffffff;
 }
 
-#team {
+/* in the footer */
+#created-by {
 	text-align: center;
 	font-size: 20px;
 }
@@ -52,7 +63,6 @@ body {
 .page-footer {
 	background-color: #4f5d75;
 }
-
 
 /* my-resources */
 /* Plus icon */
