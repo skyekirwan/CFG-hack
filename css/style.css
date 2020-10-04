@@ -12,21 +12,14 @@ h1, h2, h3, h4{
 	color: #4f5d75;
 }
 
-a {
-	text-decoration: none;
-	color: #4f5d75;
-}
-a:hover{
-	text-decoration: none;
-	color: #4f5d75;
-}
 
-.nav-link 
+/* nav when logged out */
+.outside-nav-link 
 {
 	color: #4f5d75;
 	font-size: 130%;
 }
-.nav-link:hover 
+.outside-nav-link:hover 
 {
 	color: #4f5d75;
 	text-decoration: underline;
@@ -35,6 +28,26 @@ a:hover{
 nav.button {
 	width: 100px;
 }
+
+/* nav after signed in*/
+.inside-nav
+{
+	background-color: #4f5d75;
+	border-radius: 30px;  
+	padding: 5px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #4f5d75;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #4f5d75;
+}
+
 
 /* footer */
 .page-footer {
@@ -72,6 +85,13 @@ nav.button {
 	background-color: white;
 	border: solid #4f5d75;
 }
+
+/*for big checkboxes*/
+.big-checkbox {
+	width: 30px; 
+	height: 30px;
+ }
+
 
 /* index page */
 #sign-up-form
