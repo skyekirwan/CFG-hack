@@ -8,6 +8,11 @@ h1, h2, h3, h4{
 	color: #4f5d75;
 }
 
+label {
+	color: #4f5d75;
+
+}
+
 .resource-text {
 	color: #4f5d75;
 }
