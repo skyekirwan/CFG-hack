@@ -17,69 +17,40 @@
   </head>
   <body>
     <header class="mb-5">
-    	<!--Navigation -->
-	
-    <div class="container-fluid">
-    	<!--Fix how top area looks on mobile-->
-    	<div class="row pt-3 mb-4">
-		    <!--Search bar -->
-		    <div class="col-md-9"> 
-			    <form class="form-inline">
-				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
-				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
-			    </form>
-			</div>
-			<div class="col-3">
-					<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="You profile picture"> 
-				<em> Welcome Back, Androulla </em>
-				<button type="button" class="btn btn-primary"> My Account </button>
-		    </div>
-		</div>
-	</div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  	<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav m-auto">
-	      <li class="nav-item pr-5">
-	        <a class="nav-link" href="index.html">Home</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="reviews.html">Community Reviews </a>
-	      </li>
-	      <li class="nav-item pr-5">
-	        <a class="nav-link" href="resources.html">My Resources</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="my-applications.html">My Applications</a>
-	      </li>
-	      <li class="nav-item pl-5 pr-5">
-	        <a class="nav-link" href="about.html">About Us</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
-    <div class="container-fluid">
-    	<!--Fix how top area looks on mobile-->
-    	<div class="row pt-3 mb-4">
-		    <!--Search bar -->
-		    <div class="col-md-9"> 
-			    <form class="form-inline">
-				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews.." aria-label="Search">
-				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
-			    </form>
-			</div>
-			<div class="col-md-3"> 
-		    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal"> Sign In </button>
-		    </div>
-		</div>
-	</div>
+        <form class="form-inline p-2 pl-5">
+        	<img src="images/trimmed-logo.png" alt="ReCruit Logo with tag-line 'Making recuitment accessible for you'" width="160">
+          <input class="form-control col-lg-8 ml-2" type="search" placeholder="Search company reviews..." aria-label="Search">
+          <button class="btn ml-2 search-btn" type="submit"><a href="reviews.html">Search</a></button>
+           <button class="btn ml-1 yellow-btn" type="submit"><a href="index.html">Log Out</a></button>
+        </form>
+ 
+      <!--Navigation -->
+    <nav class="navbar inside-nav navbar-expand-lg mx-5" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="account.html" style="color:white;"> <u> My Profile </u> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active pl-5 pr-5">
+            <a class="nav-link" href="resources.html" style="color:white;">My Resources </a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="reviews.html" style="color:white;">Community Reviews </a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="my-applications.html" style="color:white;">My Applications</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
 
 
-    </header>
-
-    <main class="mb-5 px-5">
+	</header>
+    <main class="mb-5 px-5" style="color: #4f5d75">
     	<div class="container-fluid">
     		<div class="row">
     			<div class="col-md-4 text-center mt-5"> 
@@ -136,11 +107,11 @@
 							<p> Please select a privacy option: </p>
 						
 							<div class="form-check form-check-inline">
-							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							  <input class="form-check-input big-checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
 							  <label class="form-check-label" for="inlineRadio1">I want to be annonymous</label>
 							</div>
 							<div class="form-check form-check-inline">
-							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							  <input class="form-check-input big-checkbox" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
 							  <label class="form-check-label" for="inlineRadio2">I consent to publishing my name on my community reviews</label>
 							</div>
 						
@@ -148,7 +119,7 @@
 					</div>
 					<div class="row pt-5">
 						<div class="col-md-3">
-								<button class="btn yellow-btn" type="submit">Save Details</button>
+								<button class="btn yellow-btn" type="submit"><a href="account.html">Save Details</a></button>
 						</div>
 					</div>
 				</div>
@@ -157,16 +128,12 @@
 			</div>		
 		</div>
     </main>
-    <style>
-    	.big-checkbox {
-    		width: 30px; 
-    		height: 30px;
-    	}
-
-    	body {
-    		color: #4f5d75;
-    	}
-    </style>
+   <style>
+   		a:hover
+   		{
+   			color: #b4d2e7 !important;
+   		}
+   </style>
     
     <!--Footer area -->	
     <footer class="page-footer p-2">

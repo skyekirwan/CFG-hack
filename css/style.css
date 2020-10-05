@@ -1,17 +1,58 @@
 
 body {
-	font-family: Arial;
+	font-family: Verdana, Arial;
+	color: #4f5d75;
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6{
 	color: #4f5d75;
+}
+
+label {
+	color: #4f5d75;
+
 }
 
 .resource-text {
 	color: #4f5d75;
-
 }
+
+/* nav when logged out */
+.outside-nav-link 
+{
+	color: #4f5d75;
+	font-size: 130%;
+}
+.outside-nav-link:hover 
+{
+	color: #4f5d75;
+	text-decoration: underline;
+}
+
+nav.button {
+	width: 100px;
+}
+
+/* nav after signed in*/
+.inside-nav
+{
+	background-color: #4f5d75;
+	border-radius: 30px;  
+	padding: 5px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #4f5d75;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #4f5d75;
+}
+
 
 /* footer */
 .page-footer {
@@ -20,22 +61,15 @@ h1, h2, h3, h4, h5 {
 }
 
 /* in the footer */
-#created-by {
+p#created-by {
 	text-align: center;
-	font-size: 20px;
+	font-size: 15px;
 }
 
-#copyright {
+p#copyright {
 	text-align: right;
-	font-size: 25px;
+	font-size: 18px;
 }
-
-/*sign in pop-up */
-#sign-in-text{
-	color: white;
-	text-decoration: none;
-}
-
 
 /*for any button that needs to go yellow */
 .yellow-btn{
@@ -50,7 +84,33 @@ h1, h2, h3, h4, h5 {
 	border: solid #4f5d75;
 }
 
-/* about */
+.search-btn
+{
+	color: #4f5d75;
+	background-color: white;
+	border: solid #4f5d75;
+}
+
+/*for big checkboxes*/
+.big-checkbox {
+	width: 30px; 
+	height: 30px;
+ }
+
+
+/* index page */
+#sign-up-form
+{
+	position: absolute;
+  	top: 90px;
+  	right: 90px;
+  	width: 500px;
+  	height: 400px;
+  	background-color: white;
+  	border: solid #4f5d75;
+}
+
+/* about page */
 #ready{
 	background: #F0F0F0;
 }
@@ -58,6 +118,12 @@ h1, h2, h3, h4, h5 {
 #team{
 	background: #b4d2e7;
 }
+
+
+/* links in the about page are underlined */
+.about-link {
+	text-decoration: underline;
+
 
 /* footer */
 .page-footer {

@@ -19,26 +19,60 @@
 
   </head>
   <body>
-    <header class="mb-5">
-    <!--Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="mb-2">
+      <!--Navigation -->
+	<nav class="navbar navbar-expand-lg">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  	<span class="navbar-toggler-icon"></span>
 	  </button>
-	  <img src="images/trimmed-logo.png" alt="ReCruit Logo with tag-line 'Making recuitment accessible for you'" width="120">
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav m-auto">
-	      <li class="nav-item pr-5">
-	        <a class="nav-link" href="index.html">HOME</a>
+	  <a href="index.html"> <img src="images/trimmed-logo.png" alt="ReCruit Logo with tag-line 'Making recuitment accessible for you'" width="180"> </a>
+	  <!--Bootstrap flex to make it go to right-->
+	  <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item pl-5 pt-2">
+	        <a class="outside-nav-link" href="index.html"> HOME </a>
 	      </li>
-	      <li class="nav-item active pl-5 pr-5">
-	        <a class="nav-link" href="reviews.html">ABOUT US<span class="sr-only">(current)</span></a>
+	      <li class="nav-item active pl-5 pt-2">
+	        <a class="outside-nav-link" href="about.html"> <u> ABOUT US </u><span class="sr-only">(current)</span></a>
 	      </li>
+	      <button type="button" class="btn yellow-btn btn-lg ml-5" data-toggle="modal" data-target="#loginModal"> Sign in </button>
 	    </ul>
-	    <button type="button" class="btn yellow-btn"> Sign in </button>
+	    
 	  </div>
-
 	</nav>
+	</nav>
+
+	
+<!-- The Log-in Modal -->
+	<div class="modal" id="loginModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <!-- Modal Header -->
+	      <div class="modal-header">
+	        <h4 class="modal-title">Sign in</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="p-5 text-center">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="#" placeholder="Enter your email address">
+					  </div>
+					  <div class="form-group">
+					    <input type="password" class="form-control" id="#" placeholder="Password">
+					  </div>
+					<button class="btn yellow-btn mt-2" type="submit"><a href="account.html">Sign in</a></button>
+
+				</form>
+				<a href="https://www.linkedin.com/uas/request-password-reset"> <u> Reset password </u></a>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End of log-in modal --> 
+
     </header>
 
     <main class="">
@@ -47,57 +81,89 @@
 		    <div class="col-md-5 p-5"> 
 		   	<!--Title -->
 		    	<h1> Making <br> recruitment <br> accessible for you. </h1>
+
+		    	<img src="images/CV resourcespage.png" alt="CV graphic" class="img-fluid"> 
 		    </div>
 		     <div class="col-md-7 mt-5"> 
 		    	 <p>
 		    	 	<!--Description of website --> 
-		    	 	<br> <p>ReCruit is a community-based website for disabled users to review recruitment processes on inclusivity and accessibility.</p>
+		    	 	<br> 
+			     <p><b>Applying to jobs online can be difficult and inaccessible for disabled people</b></p>
+			     <p>ReCruit is a community-based website for disabled users to review recruitment processes on inclusivity and accessibility.</p>
 			     <p>This includes people with all types of disabilities, including those who do not consider themselves to be disabled, 
 				     have hidden disabilities and those who require reasonable adjustments.</p>
-			     <p>Did
- 
+			     
+			     <p>A disability is any condition that makes it more difficult for a person to do certain activities or interact with the world around them. 
+				     These conditions, or impairments, may be cognitive, developmental, intellectual, mental, physical, sensory, or a 
+				     combination of multiple factors.*</p>
+
+			     <p><b>Did you know:</b></p>
+			     <p><ul>
+			     
+			     <li>Out of <b>14 million disabled people in the UK</b>, more than 7 million are of working age. However, <b>less than half are employed</b>**</li>
+			     <li>1 in 30 people in the UK are blind or visually impaired***</li>
+			     <li>Around 15% of the population has dyslexia***</li>
+			     <li>1.5 million people in the UK have a learning disability***</li>
+
+			     </ul></p>
+			  <p>By hiring fewer disabled people, companies risk missing out on valuable insights, skills and experiences which could open 
+				  new business opportunities.</p>
+
+				  <hr>
+			  <small>
+				  <p>*<a class="about-link" href="https://www.who.int/classifications/icf/en/" target="_blank">World Health Organization, International Classification of 
+					  Functioning, Disability and Health (ICF)</a></p>
+					  
+				  <p>**<a class="about-link" href="https://workwithme.support/" target="_blank">WorkWithMe 2020</a></p>
+					  
+				  <p>***<a class="about-link" href="https://reciteme.com/uploads/articles/accessible_fonts_guide.pdf" target="_blank">ReciteMe 2020</a></p>
+				</small>
+
 		    	 </p>
 		    </div>
 		   </div>
 		</div>
-		<div class="row mb-5">
-		   	<div class="col-md-4 " align="center">
-		   		<img src="images/profile-picture.png" class="img-fluid rounded-circle" alt="picture of ...." width="200">		
-		   	</div>
-		   	<div class="col-md-4" align="center">
-		   		<img src="images/profile-picture.png" class="img-fluid rounded-circle" alt="picture of ...." width="200">	  		
-		   	</div>
-		   	<div class="col-md-4" align="center">
-		   		<img src="images/profile-picture.png" class="img-fluid rounded-circle" alt="picture of ...." width="200">	
-		   	</div>    	
-		</div>
-		<div class="row justify-content-center p-5 m-0" id="ready">
-		    <div class="col-md-4 text-center"> 
+		
+		<div class="row justify-content-center p-5 m-0 mt-2" id="ready">
+		    <div class="col-md-4 text-center p-2"> 
 		    	<h4> Ready to start? </h4>
-		    	<button class="btn btn-lg btn-block yellow-btn"> Sign Up Here </button>
+		    	<button class="btn btn-lg btn-block yellow-btn"> <a href="index.html"> Sign Up Here </a></button>
 		    </div>
 		</div>
-		<div class="row p-2 m-0" id="team">
+		<div class="row p-2 m-0 mt-2" id="team">
 			<div class="col-md-12 p-2">
 		   		<h5> Meet the Team </h5>
 		   	</div>
 		   	<div class="col-md-3">
-		   		<img src="images/profile-picture.png" class="img-fluid" alt="Picture of team member Androulla">	
-		   		<p> Name / bio</p>
+
+		   		<img src="images/skyeprofile.png" class="img-fluid rounded-circle" alt="Picture of team member Skye">	
+
+				<p><b>Skye Kirwan</b></p>
+				<p>I am a third year Computer Science student at the University of Dundee. I'm obsessed with my dog 
+					and like to drink coffee and read. I run a society for Women in 
+					STEM and, although I enjoy coding, this is my first hackathon.</p>
+				<p>I decided to sign up for the CFG Diversity Hack with Vodafone as I am an advocate for equality and inclusion 
+					and also passionate about finding innovative solutions to help others.</p>
 		   	</div>
 		   	<div class="col-md-3">
-		   		<img src="images/profile-picture.png" class="img-fluid" alt="Picture of team member Ange">	
-		   		<p> Name /bio </p>
+		   		<img src="images/angeprofile.jpg" class="img-fluid rounded-circle" alt="Picture of team member Ange">	
+				<p><b>Ange Gakwaya</b></p>
+				<p>I am a final year Spanish and Economics student at the University of Warwick. I love learning languages and I 
+					am passionate about all things skincare and African history.</p>
+				<p>I decided to sign up for the CFG Diversity Hack with Vodafone because I see all the problems that tech-enabled 
+					solutions could solve, and I want to be amongst those that are building them.</p>
 		   	</div>
 		   	<div class="col-md-3">
-		   		<img src="images/profile-picture.png" class="img-fluid" alt="Picture of team member Androulla">	
-		   		<p> Name /bio </p>
+		   		<img src="images/androulla-profile.png" class="img-fluid rounded-circle" alt="Picture of team member Androulla">	
+				<p><b>Androulla Charalambous </b></p>
+				<p>BIO HERE</p>
+				<p>I decided to sign up for the CFG Diversity Hack with Vodafone...</p>
 		   	</div>
 		   	<div class="col-md-3">
-		   		<img src="images/profile-picture.png" class="img-fluid" alt="Picture of team member Zainab">	
+		   		<img src="images/zainabprofile.png" class="img-fluid rounded-circle" alt="Picture of team member Zainab">	
 				<p><b>Zainab Patel</b></p>
 				<p> I am a second year Medical Physiology student at the University of Leicester. 
-					I enjoy cooking and weighlifting in my free time</p>
+					I enjoy cooking and weighlifting in my free time.</p>
 				<p>I decided to join the CFG Diversity Hack with Vodafone as I am very passionate about 
 					diversifying the workplace and increasing social mobility, all while improving my 
 					technological skills and meeting new people!</p>

@@ -9,163 +9,255 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-     <!--Custom CSS -->
+
+    <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!--font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>ReCruit | Community Reviews</title>
+    <title>ReCruit | CV/Online Applications</title>
 
   </head>
   <body class="pt-2">
-    <header class="mb-5">
+            <header class="mb-5">
+        <form class="form-inline p-2 pl-5">
+          <img src="images/trimmed-logo.png" alt="ReCruit Logo with tag-line 'Making recuitment accessible for you'" width="160">
+          <input class="form-control col-lg-8 ml-2" type="search" placeholder="Search company reviews..." aria-label="Search">
+          <button class="btn ml-2 search-btn" type="submit"><a href="reviews.html">Search</a></button>
+           <button class="btn ml-1 yellow-btn" type="submit"><a href="index.html">Log Out</a></button>
+        </form>
+ 
       <!--Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item pr-5">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active pl-5 pr-5">
-          <a class="nav-link" href="reviews.html">Community Reviews</a>
-        </li>
-        <li class="nav-item pr-5">
-          <a class="nav-link" href="resources.html">My Resources</a>
-        </li>
-        <li class="nav-item pl-5 pr-5">
-          <a class="nav-link" href="my-applications.html">My Applications</a>
-        </li>
-        <li class="nav-item pl-5 pr-5">
-          <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-    <div class="container-fluid">
-    	<!--Fix how top area looks on mobile-->
-    	<div class="row pt-3 mb-4">
-		    <!--Search bar -->
-		    <div class="col-md-9"> 
-			    <form class="form-inline">
-				    <input class="form-control col-lg-10" type="search" placeholder="Search company reviews..." aria-label="Search">
-				    <button class="btn btn-outline-success ml-2" type="submit">Search</button>
-			    </form>
-			</div>
-			<div class="col-md-3"> 
-		    	<img src="images/profile-picture.png" class= "rounded-circle" width="35" height="35" alt="Your profile picture"> 
-				<em> Welcome Back, Androulla </em>
-				<button type="button" class="btn btn-primary"> My Account </button>
-		    </div>
-		    </div>
-		</div>
-	</div>
-	
+    <nav class="navbar inside-nav navbar-expand-lg mx-5" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="account.html" style="color:white;"> My Profile </a>
+          </li>
+          <li class="nav-item active pl-5 pr-5">
+            <a class="nav-link" href="resources.html" style="color:white;">My Resources </a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="reviews.html" style="color:white;"> <u> Community Reviews </u><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pl-5 pr-5">
+            <a class="nav-link" href="my-applications.html" style="color:white;">My Applications</a>
+          </li>
 
-	
+        </ul>
+      </div>
+    </nav>
 
-    </header>
+
+  </header>
 
     <main class="mb-5 px-5">
-	   <!--  <div class="container-fluid p-5"> 
-		  <div class="row"> -->
-		    <!--Title -->
-		    <!-- <div class="col-md-7 mt-5"> 
-		    	<img src="images/logo-with-tag.png" alt="ReCRuit Logo with tag-line 'Making recuitment accessible for you'"> -->	
-		    	<!--<h6> Description of website </h6> -->
-		    <!-- </div>
-		   </div>
-		 </div>
- -->
-		 	
-		 	<div style="text-align: center; padding-left: 300px; ">
-		 		<img src="images/vodafone-icon.png" width="40" height="40" alt="Vodafone Icon">
-		    	<h1>Software Developer At Vodafone</h1>
-		    </div>
+
+      <div class="row">
+        <div class="col-md-2 pr-2">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><h5> Browse Companies </h5></a>
+            <hr> 
+            <h6> Your favourites: </h6>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <img src="images/favourite-icon.png" alt="Favourite icon" width="15px"> Vodafone</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img src="images/favourite-icon.png" alt="Favourite icon" width="15px"> Code First Girls</a>
+           
+            <form>
+              <button class="btn search-btn mt-5"> Add company </button>
+              <button class="btn search-btn mt-2"> Add role </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-10">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row">
+              <div class="col-md-12 p-2">
+                <h5> Click on a company to view and review the recruitment process.</h5>         
+              </div>
+            </div>
+             <div class="row mt-2">
+                <div class="col-md-4">
+                  <div class="card-body border">
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" class="d-block h-100">  <img class="img-fluid img-thumbnail" src="images/vodafone-icon.png" alt="Vodafone"></a>
+                  
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border">
+                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false" class="d-block h-100">  <img class="img-fluid img-thumbnail" src="images/cfg-logo.png" alt="Vodafone"></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">  <h2 class="card-title">Company</h2></a>
+                              <p> Click to view or review the application process.</p>
+                    </div>
+                  </div>
+              </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                  <div class="card-body border p-5">
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <h2 class="card-title">Company</h2></a>
+                     <p> Click to view or review the application process.</p>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                       <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h2 class="card-title">Company</h2></a>
+                        <p> Click to view or review the application process.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">  <h2 class="card-title">Company</h2></a>
+                              <p> Click to view or review the application process.</p>
+                    </div>
+                  </div>
+              </div>
+                          <div class="row mt-2">
+                <div class="col-md-4">
+                  <div class="card-body border p-5">
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <h2 class="card-title">Company</h2></a>
+                     <p> Click to view or review the application process.</p>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                       <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h2 class="card-title">Company</h2></a>
+                        <p> Click to view or review the application process.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">  <h2 class="card-title">Company</h2></a>
+                              <p> Click to view or review the application process.</p>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+           <div class="row">
+              <div class="col-md-1">
+                <img src="images/vodafone-icon.png" alt="Vodafone Icon" width="100%">
+              </div>
+              <div class="col-md-11 p-2">
+                <h1>Vodafone</h1>
+              </div>
+            </div>
+             <div class="row mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/one.png" alt="CV/online applications image">
+                </a>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/two.png" alt="psychometric review image">
+                </a>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/three.png" alt="telephone interview image">
+                </a>
+                </div>
+              </div>
+              <div class="row mt-5">
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/four.png" alt=" video interview image">
+                </a>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/five.png" alt="assessment centre image">
+                </a>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                  <a href="online-review.html" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/one.png" alt="CV/online applications image">
+                </a>
+                </div>
+          </div>
+        </div>
+              
         
-
-  	<div class="row">
-    <div class="col-sm-3">
-      <br>
-    	<h2>Vodafone</h2>
-      <br>
-    	<h2>Company 2</h2>
-      <br>
-    	<h2>Add new</h2>
-      <br>
-    	<form>
-    		<i class="fa fa-plus"></i>
-    		<input type="text" id="" name="" placeholder="Add new company"> <br><br>
-    		<i class="fa fa-plus"></i>
-      		<input type="text" id="" name="" placeholder="Add new role"> <br><br>
-      				
-      	</form>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+               <div class="row">
+              <div class="col-md-1">
+                  <img src="images/cfg-logo.png" alt="Code First Girls Logo" width="100%">
+              </div>
+              <div class="col-md-11 p-2">
+                <h1>Code First Girls</h1>
+              </div>
+            </div>
+             <div class="row mt-2">
+                <div class="col-md-4">
+                  <div class="card-body border p-5">
+                    <h2 class="card-title">CV/Online Applications</h2>
+                    <a href="online-review.html"><button class="btn yellow-btn">Review</button></a>
+                    <button class="btn yellow-btn">View</button>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                      <h2 class="card-title">Psychometric Tests</h2>
+                      <a href="psy-review.html"><button class="btn yellow-btn">Review</button></a>
+                      <button class="btn yellow-btn">View</button>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                    <h2 class="card-title">Telephone Interviews</h2>
+                    <a href="tel-review.html"><button class="btn yellow-btn">Review</button></a>
+                      <button class="btn yellow-btn">View</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt-5">
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                    <h2 class="card-title">Video Interviews</h2>
+                    <a href="vid-review.html"><button class="btn yellow-btn">Review</button></a>
+                      <button class="btn yellow-btn">View</button>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                    <h2 class="card-title">Assessment Centres</h2>
+                    <a href="assessment-review.html"><button class="btn yellow-btn">Review</button></a>
+                      <button class="btn yellow-btn">View</button>
+                    </div> 
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card-body border p-5">
+                    <h2 class="card-title">Stage of Application <small class="text-muted"></small></h2>
+                    <button class="btn yellow-btn">Review</button>
+                      <button class="btn yellow-btn">View</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-9">
 
-    	<div class="row">
-
-    			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<a href="online-review.html"><h2 class="card-title">CV/Online Applications</h2></a>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-        		
-      			</div>
-      			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<a href="psy-review.html"><h2 class="card-title">Psychometric Tests</h2></a>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-        			
-        			
-      			</div>
-      			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<a href="tel-review.html"><h2 class="card-title">Telephone Interviews</h2></a>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-        			
-        			
-      			</div>
-      			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<a href="vid-review.html"><h2 class="card-title">Video Interviews</h2></a>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-        			
-        			
-      			</div>
-      			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<a href="assessment-review.html"><h2 class="card-title">Assessment Centres</h2></a>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-        			
-        			
-      			</div>
-      			<div class="col-md-4">
-      				<div class="card-body border p-5">
-         			<h2 class="card-title">Name of Stage of Application Process <small class="text-muted">6</small></h2>
-        			<p class="text-muted">Clicking takes user to page of questions to answer.</p>
-      				</div>
-      			</div>
-      		</div>
     </div>
-</div>
-	
-	</main>	
-		   
-		    
-    <!--Footer area -->	
+    </main>
+  <style>
+  
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #4f5d75;
+        background-color: #b4d2e7;
+
+   </style>
+
+    <!--Footer area --> 
     <footer class="page-footer p-2">
-    	<p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
-    	<p id="copyright"> &copy; ReCruit 2020 </p>
-	</footer>
-
+      <p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
+      <p id="copyright"> &copy; ReCruit 2020 </p>
+  </footer>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
