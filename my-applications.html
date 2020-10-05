@@ -56,17 +56,16 @@
 			<div class="row">
 				<div class="col-md-3">
 
-					<img src="images/profile-picture.png" alt="Picture of ... " width="180" height="180"> 
-					<br> 
-					<br>
+					<img src="images/Upload resources.png" alt="Picture of Applications " class="img-fluid mb-5"> 
+					
 					<!--Calendar area (left)-->
-					<table class="table-condensed table-bordered table-striped">
+					<table class="table-striped mb-5">
 		                <thead>
 		                    <tr>
-		                      <th colspan="7">
+		                      <th colspan="10">
 		                        <span class="btn-group">
 		                            <a class="btn"><i class="icon-chevron-left"></i></a>
-		                        	<a class="btn active">October 2020</a>
+		                        	<p> October 2020</p>
 		                        	<a class="btn"><i class="icon-chevron-right"></i></a>
 		                        </span>
 		                      </th>
@@ -130,75 +129,138 @@
 		                </tbody>
 		            </table>
 				</div>
-				<div class="col-md-9">
+				<div class="col-md-8 ml-2">
 					<!--Applications area (right)-->
 					<div class="row">
 						<div class="col-md-8">
-							<h4> My Applications </h4>
+							<h3> Your Applications </h3>
 						</div>
 						<div class="col-md-4">
-							<button class="btn yellow-btn"> + company </button>
-							<button class="btn yellow-btn"> + role </button>
+							<button class="btn yellow-btn"> Add application </button>
+							
 						</div>
 					</div>
 					<br> 
 					<br> 
 					<div class="row">
-					  <!-- <div class="card">
-						  <div class="card-header">
-						    <ul class="nav nav-tabs card-header-tabs">
-						      <li class="nav-item">
-						        <a class="nav-link active" href="#">Application 1</a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="#">Application 2</a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="#">Application 3</a>
-						      </li>
-						    </ul>
+					 	<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Application 1</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Application 2</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Application 3</a>
+						  </li>
+						   <li class="nav-item">
+						    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="app" aria-selected="false">Application 4</a>
+						  </li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="tab-content" id="myTabContent">
+						  <div class="tab-pane fade show active pt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
+						  	
+						  	<h5> <b> Software Developer at Vodaphone </b></h5>
+						  		 <ul class="list-group list-group-flush">
+						    <li class="list-group-item">
+						      <!-- Default checked -->
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check1" checked>
+						        <label class="custom-control-label" for="check1">CV</label>
+						      </div>
+						    </li>
+						    <li class="list-group-item">
+						      <!-- Default checked -->
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check2" checked>
+						        <label class="custom-control-label" for="check2">Pymetrics Test</label>
+						      </div>
+						    </li>
+						    <li class="list-group-item">
+						      <!-- Default checked -->
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check3" checked>
+						        <label class="custom-control-label" for="check3">Technical Interview</label>
+						      </div>
+						  	</li>
+						  	<li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check4">
+						        <label class="custom-control-label" for="check4">Assessment Centre</label>
+						      </div>
+						    </li>
+						 
+						  </ul>
 						  </div>
-						  <div class="card-body">
-						    <h5 class="card-title"> Role @ Company </h5>
-						    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							    <div class="input-group-text">
-							      <input type="checkbox" aria-label="Checkbox for following text input" placeholder="CV">
-							    </div>
-							    <div class="input-group-text">
-							      <input type="checkbox" aria-label="Checkbox for following text input">
-							    </div>
-							    <div class="input-group-text">
-							      <input type="checkbox" aria-label="Checkbox for following text input">
-							    </div>
-							</div>
+						  <div class="tab-pane fade pt-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						  	<h5> <b> Web Developer at Code First Girls </b></h5>
+						  				  		 <ul class="list-group list-group-flush">
+						    <li class="list-group-item">
+						      <!-- Default checked -->
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check7" checked>
+						        <label class="custom-control-label" for="check7">CV</label>
+						      </div>
+						    </li>
+						    <li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check8" checked>
+						        <label class="custom-control-label" for="check8">Technical Interview</label>
+						      </div>
+						  	</li>
+						  	<li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check9">
+						        <label class="custom-control-label" for="check9">Phone Interview</label>
+						      </div>
+						    </li>
+						 
+						  </ul>
+						  </div>
+						  <div class="tab-pane fade pt-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						  	<h5> <b> Role at Company </b></h5>
+						  	<ul class="list-group list-group-flush">
+						    <li class="list-group-item">
+						      <!-- Default checked -->
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check10" checked>
+						        <label class="custom-control-label" for="check10">CV</label>
+						      </div>
+						    </li>
+						    <li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check30">
+						        <label class="custom-control-label" for="check3">Online Test</label>
+						      </div>
+						  	</li>
+						  	<li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check30">
+						        <label class="custom-control-label" for="check3">Phone Interview</label>
+						      </div>
+						    </li>
+						    	<li class="list-group-item">
+						      <div class="custom-control custom-checkbox">
+						        <input type="checkbox" class="custom-control-input" id="check39">
+						        <label class="custom-control-label" for="check39">Assessment Centre</label>
+						      </div>
+						    </li>
+						 
+						  </ul>
+						  </div>
+						   <div class="tab-pane fade pt-5" id="app" role="tabpanel" aria-labelledby="contact-tab">
+						   			<h5> <b> Role at Company </b></h5>
+
+						   </div>
 						</div>
-					</div> -->
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-					  <li class="nav-item">
-					    <a class="nav-link active" id="1-tab" data-toggle="tab" href="#1" role="tab" aria-controls="1" aria-selected="true">Application 1</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" id="2-tab" data-toggle="tab" href="#2" role="tab" aria-controls="2" aria-selected="false">Application 2</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" id="3-tab" data-toggle="tab" href="#3" role="tab" aria-controls="3" aria-selected="false">Application 3</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" id="4-tab" data-toggle="tab" href="#4" role="tab" aria-controls="4" aria-selected="false">Application 4</a>
-					  </li>
-					</ul>
-					
-					<!-- Tab panes -->
-					<div class="tab-content">
-					  <div class="tab-pane active" id="first-tab" role="tabpanel" aria-labelledby="tab-1"></div>
-					  <div class="tab-pane" id="second-tab" role="tabpanel" aria-labelledby="tab-2">...</div>
-					  <div class="tab-pane" id="3" role="tabpanel" aria-labelledby="messages-tab">...</div>
-					  <div class="tab-pane" id="4" role="tabpanel" aria-labelledby="settings-tab">...</div>
+
 					</div>
 				</div>
-			</div>
 		</div>
     </main>
+    
    <!--Footer area -->	
     <footer class="page-footer p-2">
     	<p id="created-by"> Created by: CFG Diversity Hack Team 1</p>
